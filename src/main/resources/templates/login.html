@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+<body>
+	<h1>Login</h1>
+	<form action="#" th:action="@{/login}"th:object="${usuario}"method="post">
+	<p>Usuario: <input type ="text" th:field="*{usuario}"></p>
+	<p>Contraseña: <input type ="password" th:field="*{contraseña}"></p>
+	<p> <input type="submit" value="Enviar"/> <input type="reset" value="Borrar">
+	</form>
+</body>
+</html>
